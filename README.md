@@ -1,13 +1,17 @@
 # mqtt-async
 Work in progress. A simple way to convert the MQTT library to async. No dependecies. Just a simple function.
 
-Create an MQTT instance as normal. Then just do this.
+Create an MQTT instance as normal. Then just call MqttAsync().
 
 ```
 const Mqtt = require('mqtt');
 const MqttAsync = require('mqtt-async');
 
 let mqtt = MqttAsync(Mqtt.connect(...));
+
+await mqtt.subscribe('topic');
+await mqtt.publish('topic', 'Hello');
+
 ```
 
 Complete source code
