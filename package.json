@@ -1,6 +1,6 @@
 {
   "name": "mqtt-async",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "mqtt-async",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,10 @@
     "goto-github": "open https://github.com/meg768/mqtt-async.git",
     "goto-npm": "open https://www.npmjs.com/package/mqtt-async"
   },
+  "keywords": [
+    "mqtt",
+    "mqtt-async"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/meg768/mqtt-async.git"
