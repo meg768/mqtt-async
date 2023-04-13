@@ -1,6 +1,6 @@
 {
   "name": "mqtt-async",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "mqtt-async",
   "main": "index.js",
   "scripts": {

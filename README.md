@@ -1,5 +1,5 @@
 # mqtt-async
-Work in progress. A simple way to convert the MQTT library to async. Just a function.
+Work in progress. A simple way to convert the MQTT library to async. No dependecies. Just a simple function.
 
 Create an MQTT instance as normal. Then just do this.
 
