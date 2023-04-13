@@ -1,0 +1,22 @@
+{
+  "name": "mqtt-async",
+  "version": "1.0.0",
+  "description": "mqtt-async",
+  "main": "index.js",
+  "scripts": {
+    "git-commit": "git add -A && git push && git commit -m '-' && git push",
+    "npm-publish": "npm version patch && npm publish",
+    "goto-github": "open https://github.com/meg768/mqtt-async.git",
+    "goto-npm": "open https://www.npmjs.com/package/mqtt-async"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meg768/mqtt-async.git"
+  },
+  "author": "Magnus Egelberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meg768/mqtt-async/issues"
+  },
+  "homepage": "https://github.com/meg768/mqtt-async#readme"
+}
