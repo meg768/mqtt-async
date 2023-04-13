@@ -7,10 +7,9 @@ Create an MQTT instance as normal. Then just do this.
 
 ```
 
-let Mqtt = reuire('mqtt');
-let MqttAsync = require('mqtt-async');
+const Mqtt = reuire('mqtt');
+const MqttAsync = require('mqtt-async');
 
-let Mqtt = require('mqtt');
 let mqtt = MqttAsync(Mqtt.connect(...));
 
 ```
