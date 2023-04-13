@@ -1,6 +1,6 @@
 {
   "name": "mqtt-async",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "mqtt-async",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,8 @@
   },
   "keywords": [
     "mqtt",
-    "mqtt-async"
+    "mqtt-async",
+    "async"
   ],
   "repository": {
     "type": "git",
