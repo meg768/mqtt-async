@@ -1,2 +1,2 @@
 # mqtt-async
-A simple way to convert the MQTT library to async.
+A simple way to convert the MQTT library to async. Just a function.
