@@ -1,4 +1,3 @@
-
 module.exports = function MqttAsync(client) {
     
     let subscribe = client.subscribe;
@@ -6,9 +5,9 @@ module.exports = function MqttAsync(client) {
     let unsubscribe = client.unsubscribe;
     let end = client.end;
 
-	client.publish = (topic, value, options) => {
+	client.publish = (...args) => {
 		return new Promise((resolve, reject) => {
-			publish.call(client, topic, value, options, (error) => {
+			publish.call(client, ...args, (error) => {
 				if (error)
 					reject(error);
 				else 
@@ -17,9 +16,9 @@ module.exports = function MqttAsync(client) {
 		});
 	}  
 
-    client.subscribe = (topic, options) => {
+    client.subscribe = (...args) => {
 		return new Promise((resolve, reject) => {
-			subscribe.call(client, topic, options, (error) => {
+			subscribe.call(client, ...args, (error) => {
 				if (error)
 					reject(error);
 				else 
@@ -29,9 +28,9 @@ module.exports = function MqttAsync(client) {
 
 	}
 
-    client.unsubscribe = (topic, options) => {
+    client.unsubscribe = (...args) => {
 		return new Promise((resolve, reject) => {
-			unsubscribe.call(client, topic, options, (error) => {
+			unsubscribe.call(client, ...args, (error) => {
 				if (error)
 					reject(error);
 				else 
@@ -41,9 +40,9 @@ module.exports = function MqttAsync(client) {
 
 	}
 
-    client.end = (force, options) => {
+    client.end = (...args) => {
 		return new Promise((resolve, reject) => {
-			end.call(client, force, options, (error) => {
+			end.call(client, ...args, (error) => {
 				if (error)
 					reject(error);
 				else 
@@ -55,4 +54,3 @@ module.exports = function MqttAsync(client) {
 
     return client;
 }
-
