@@ -16,7 +16,7 @@ await mqtt.publish('topic', 'Hello');
 
 Complete source code
 
-```
+```javascript
 module.exports = function MqttAsync(client) {
 
     let subscribe = client.subscribe;
