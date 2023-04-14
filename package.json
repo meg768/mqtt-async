@@ -2,7 +2,7 @@
   "name": "mqtt-async",
   "version": "1.0.31",
   "description": "mqtt-async",
-  "main": "index.js",
+  "main": "mqtt-async.js",
   "scripts": {
     "git-commit": "git add -A && git push && git commit -m '-' && git push",
     "npm-publish": "npm version patch && npm publish",
