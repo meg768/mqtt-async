@@ -1,6 +1,6 @@
 {
   "name": "mqtt-async",
-  "version": "1.0.26",
+  "version": "1.0.27",
   "description": "mqtt-async",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,7 @@
   "keywords": [
     "mqtt",
     "mqtt-async",
+    "async-mqtt",
     "publish",
     "subscribe",
     "async"
