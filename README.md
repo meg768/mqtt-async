@@ -15,7 +15,7 @@ await mqtt.publish('topic', 'Hello');
 
 ```
 
-Complete source code
+This is the complete source code. Nothing more. Just copy it into your project or use this module.
 
 ```javascript
 module.exports = function MqttAsync(client) {
