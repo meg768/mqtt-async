@@ -1,6 +1,10 @@
 # mqtt-async
 A simple way to convert the MQTT.js [https://www.npmjs.com/package/mqtt] to use async/await. No dependecies. Just a simple function.
 
+This is a dispatcher for MQTT.js [https://www.npmjs.com/package/mqtt] which
+supports message routing for specific topics. 
+
+
 Create an MQTT instance as normal. Then just call MqttAsync().
 
 ```javascript
