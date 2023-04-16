@@ -18,6 +18,7 @@ await mqtt.publish('topic', 'Hello');
 This is the complete source code. Nothing more. Just copy it into your project or use this module.
 
 ```javascript
+
 module.exports = function MqttAsync(client) {
 
     let subscribe = client.subscribe;
@@ -28,10 +29,7 @@ module.exports = function MqttAsync(client) {
     client.publish = (...args) => {
         return new Promise((resolve, reject) => {
             publish.call(client, ...args, (error) => {
-                if (error)
-                    reject(error);
-                else
-                    resolve();
+                error ? reject(error) : resolve();
             });
         });
     }
@@ -39,10 +37,7 @@ module.exports = function MqttAsync(client) {
     client.subscribe = (...args) => {
         return new Promise((resolve, reject) => {
             subscribe.call(client, ...args, (error) => {
-                if (error)
-                    reject(error);
-                else
-                    resolve();
+                error ? reject(error) : resolve();
             });
         });
 
@@ -51,10 +46,7 @@ module.exports = function MqttAsync(client) {
     client.unsubscribe = (...args) => {
         return new Promise((resolve, reject) => {
             unsubscribe.call(client, ...args, (error) => {
-                if (error)
-                    reject(error);
-                else
-                    resolve();
+                error ? reject(error) : resolve();
             });
         });
 
@@ -63,10 +55,7 @@ module.exports = function MqttAsync(client) {
     client.end = (...args) => {
         return new Promise((resolve, reject) => {
             end.call(client, ...args, (error) => {
-                if (error)
-                    reject(error);
-                else
-                    resolve();
+                error ? reject(error) : resolve();
             });
         });
 
