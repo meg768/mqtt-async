@@ -1,4 +1,4 @@
-module.exports = function MqttAsync(client) {
+function MqttAsync(client) {
 
     let subscribe = client.subscribe;
     let publish = client.publish;
@@ -42,3 +42,10 @@ module.exports = function MqttAsync(client) {
 
     return client;
 }
+
+module.exports = MqttAsync;
+
+module.exports.connect = function (...args) {
+    const Mqtt = require('mqtt');
+    return MqttAsync(Mqtt.connect(...args))
+};
