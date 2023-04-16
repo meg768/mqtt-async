@@ -1,6 +1,6 @@
 # mqtt-async
 A simple way to convert the [MQTT.js library](https://www.npmjs.com/package/mqtt) to use async/await. No dependecies. Just a simple function. 
-This is a different approach than [async-mqtt](https://www.npmjs.com/package/async-mqtt) which encapsulates MQTT.
+This is a different approach than the [async-mqtt](https://www.npmjs.com/package/async-mqtt) library which encapsulates MQTT.
 
 Create an MQTT instance as normal. Then just call MqttAsync().
 
