@@ -1,7 +1,7 @@
 {
   "name": "mqtt-async",
-  "version": "1.0.44",
-  "description": "mqtt-async",
+  "version": "1.0.45",
+  "description": "Use MQTT with async/await",
   "main": "mqtt-async.js",
   "scripts": {
     "git-commit": "git add -A && git push && git commit -m '-' && git push",
